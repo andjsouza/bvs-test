@@ -32,7 +32,6 @@ class Ingestion(spark: SparkSession, settings: Settings) {
       .option("header", "true")
       .option("inferSchema", "true")
       .load(s"${settings.gcsInputBucket}/$fileName")
-    df.printSchema()
 
     df
   }
