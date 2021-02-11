@@ -5,5 +5,5 @@ object Attributes {
   val gcsInputBucket = "gcs-input-bucket"
   val gcsTemporaryBucket = "gcs-temp-bucket"
   val bqDataset = "bq-dataset"
-  val bqSaveMode = "save-mode"
+  val bqSaveMode = "bq-save-mode"
 }

@@ -96,7 +96,7 @@ class SettingsTest extends AnyFlatSpec with Matchers {
         "--gtb", "bvs-test-tmp",
         "--bds", "bvsdataset"
       )
-    ).saveMode shouldBe SaveMode.Append
+    ).bqSaveMode shouldBe SaveMode.Append
 
     Settings(
       Array(
@@ -105,7 +105,7 @@ class SettingsTest extends AnyFlatSpec with Matchers {
         "--bds", "bvsdataset",
         "--bsm", "Overwrite"
       )
-    ).saveMode shouldBe SaveMode.Overwrite
+    ).bqSaveMode shouldBe SaveMode.Overwrite
   }
 
 }

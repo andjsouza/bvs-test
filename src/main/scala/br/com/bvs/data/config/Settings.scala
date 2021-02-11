@@ -9,7 +9,7 @@ class Settings(settings: CommandLine) {
   lazy val gcsInputBucket: String = settings.getOptionValue(Attributes.gcsInputBucket)
   lazy val gcsTemporaryBucket: String = settings.getOptionValue(Attributes.gcsTemporaryBucket)
   lazy val bqDataset: String = settings.getOptionValue(Attributes.bqDataset)
-  lazy val saveMode: SaveMode = {
+  lazy val bqSaveMode: SaveMode = {
     settings.getOptionValue(Attributes.bqSaveMode, SaveMode.Append.name).toLowerCase match  {
       case "append" => SaveMode.Append
       case "overwrite" => SaveMode.Overwrite
