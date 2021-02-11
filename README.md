@@ -136,10 +136,13 @@ gcloud dataproc clusters delete ${CLUSTER} \
     --region=us-central1
 ```
 
+### Gráfico no DataStudio
+
+![bvs_chart](img/bvs_chart.png)
+
 ### Melhorias
 - Descobrir frequência e volume de dados por dia/semana/mês
 - Testar performance baseado nessa frequência/volume para identificar melhorias no cluster, configurações de recursos do job e modelagem dos dados
 - Automatizar execução usando alguma ferramenta do tipo Airflow
 - Escrever mais unit tests e testes de integração
 - Automatizar execução de tasks, exemplo build, criação de buckets, criação de cluster usando Makefile
-- Visualizar os dados no DataStudio
