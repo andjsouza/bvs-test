@@ -132,7 +132,7 @@ gcloud dataproc jobs submit spark \
 ```shell script
 gcloud beta dataproc clusters stop ${CLUSTER} \
     --region=us-central1
-gcloud dataproc clusters delete ${CLUSTER} \ 
+gcloud dataproc clusters delete ${CLUSTER} \
     --region=us-central1
 ```
 
