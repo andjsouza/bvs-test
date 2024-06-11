@@ -4,7 +4,7 @@ lazy val root = (project in file(".")).
   settings(
     inThisBuild(List(
       organization := "br.com.bvs",
-      scalaVersion := "2.12.12"
+      scalaVersion := "2.12.15"
     )),
     name := "bvs-test"
   )
